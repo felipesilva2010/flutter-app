@@ -14,13 +14,16 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange))
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange)
       ),
       home: Scaffold(
         body: Center(
-          child: ElevatedButton(onPressed: naoFaznada, child: Text("Meu botão")
+          child: ElevatedButton(
+            onPressed: naoFaznada, 
+          child: Text("Meu botão")
         ),
       ),
+    )
     );
   }
 }
